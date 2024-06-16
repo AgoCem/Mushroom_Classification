@@ -1,0 +1,9 @@
+artifacts_root: artifacts
+
+
+data_ingestion_manipulation:
+  root_dir: artifacts/data_ingestion
+  local_data_file: artifacts/data_ingestion
+  source_URL: https://raw.githubusercontent.com/AgoCem/Mushroom_Classification/main/mushrooms.csv
+  save_training_file: artifacts/training
+ 
