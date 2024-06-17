@@ -8,6 +8,9 @@ In order to run the pipeline, only the main.py need to be run and everything wil
 
 
 
+Hereafter the feature and class information:
+
+
 Attribute Information: (classes: edible=e, poisonous=p)
 
 cap-shape: bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s
