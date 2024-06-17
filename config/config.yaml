@@ -7,3 +7,6 @@ data_ingestion_manipulation:
   source_URL: https://raw.githubusercontent.com/AgoCem/Mushroom_Classification/main/mushrooms.csv
   save_training_file: artifacts/training
  
+model_preparation_training:
+  root_dir: artifacts/training
+  save_models: artifacts/models

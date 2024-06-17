@@ -56,6 +56,10 @@ class DataIngestionManipulation:
         X[numerical_cols] = scaler.fit_transform(X[numerical_cols])
 
         X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_state= self.config.param_random_state)
+        X_train.reset_index(drop=True,inplace = True)
+        X_test.reset_index(drop=True,inplace = True)
+        y_train.reset_index(drop=True,inplace = True)
+        y_test.reset_index(drop=True,inplace = True)
 
         train_data = pd.concat([X_train,y_train],axis = 1)
         test_data = pd.concat([X_test,y_test],axis = 1)
