@@ -64,7 +64,7 @@ class ModelPreparationTraining:
             })
 
         best_model_df = pd.DataFrame(best_models)
-        ind = max(best_model_df.best_score.index)
+        ind = best_model_df.best_score.idxmax()
         model =best_model_df.iloc[ind]["model"]
         param =best_model_df.iloc[ind]["best_params"]
         models = {
